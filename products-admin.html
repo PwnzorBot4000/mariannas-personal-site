@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="el-gr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Μαριάννα - Προιόντα</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <meta name="theme-color" content="#ffeeff">
+</head>
+
+<body>
+  <h1>Προϊόντα</h1>
+  <div id="add-product-form">
+    <h2>Νέο προϊόν</h2>
+    <span>
+      <label for="name">Όνομα</label>
+      <input type="text" id="name" name="name" placeholder="Όνομα">
+    </span>
+    <span>
+      <label for="price">Τιμή</label>
+      <input type="text" id="price" name="price" placeholder="Τιμή" pattern="[0-9]*,?[0-9]{0,2}" width="3">&euro;
+    </span>
+    <span>
+      <label for="description">Περιγραφή</label>
+      <textarea id="description" name="description" placeholder="Περιγραφή"></textarea>
+    </span>
+    <h3>Εικόνες</h3>
+    <span id="images"></span>
+    <button onclick="app.save()">Αποθήκευση</button>
+  </div>
+  <script src="js/products.js"></script>
+</body>
+
+</html>
